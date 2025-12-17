@@ -59,7 +59,7 @@ const isMobile = useMediaQuery({maxWidth:767 })
 
     videoRef.current.onloadedmetadata = () => {
       tl.to(videoRef.current, {
-        currentTime: videoRef.current.duration
+        currentTime: videoRef.current.duration,
       });
     };
   }, []);
